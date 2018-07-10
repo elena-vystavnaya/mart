@@ -1,0 +1,55 @@
+%li-header-top{
+    display: inline-block;
+    text-decoration: none;
+    list-style-type: none;
+    line-height: 11px;
+    vertical-align: 20;
+    margin-left: 30px;  
+    
+    :first-child{
+        margin: 0;
+    } 
+}
+
+%ul-header-top{
+    margin-top: 15px;
+    padding: 0;
+}
+
+
+
+.header-top{
+    background: #1abc9c;
+    font-family: 'Open Sans Light';
+    font-size: 14px;
+    color: #fefefe;
+}
+
+.container{
+    padding: 0;
+    height: 50px; 
+    width: 1110px;
+    margin: 0 auto;
+}
+
+
+.phone-email{   
+    @extend %ul-header-top;  
+    float: left; 
+    li{
+        @extend %li-header-top;          
+    }
+}
+
+.menu{
+    @extend %ul-header-top;
+    float: right;
+    li{
+        @extend %li-header-top;     
+        a{
+            color: #fefefe;
+            text-decoration: none;
+        }
+    }
+}
+
