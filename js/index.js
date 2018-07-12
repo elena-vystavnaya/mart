@@ -1,9 +1,9 @@
-$('.block-clothes.first').mouseover(function(){
-    $('.block-clothes-hover.first1').show();
+$('.block-clothes').mouseover(function(){
+    $(this).find('.block-clothes-hover').show();
 });
 
-$('.block-clothes.first').mouseleave(function(){
-    $('.block-clothes-hover.first1').hide();
+$('.block-clothes').mouseleave(function(){
+    $(this).find('.block-clothes-hover').hide();
 });
 
 
