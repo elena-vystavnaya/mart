@@ -1,9 +1,5 @@
-@import url(owl.carousel.css) screen;
-@import url(pe-icon-7-stroke.css) screen;
-@import url(animate.min.css) screen;
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,700,500italic,700italic,900,900italic);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,600,600italic,700,800,400italic);
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,800,900,700,600,500,300,200,100);
 .phone-email li, .myAccount li {
   display: inline-block;
   text-decoration: none;
@@ -304,7 +300,8 @@ h2 {
 
 .blocks-clothes-flex {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  padding-top: 30px; }
 
 .block-clothes {
   height: 320px;
@@ -385,7 +382,6 @@ h2 {
     .block-clothes-hover .addToCart:hover {
       background: #1abc9c; }
 
-/* STYLE */
 /* FONTS */
 .clearfix:after {
   display: block;
