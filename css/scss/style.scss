@@ -1,8 +1,12 @@
-@import 'header';
+@import 'header-top';
+@import 'header-menu';
+@import 'slider';
+@import 'textBlocks';
+@import 'clothes';
+@import 'products';
 
 /* STYLE */
 @import url(font-awesome.css) screen;
-@import url(bootstrap.css) screen;
 @import url(owl.carousel.css) screen;
 @import url(pe-icon-7-stroke.css) screen;
 @import url(animate.min.css) screen;
@@ -16,6 +20,11 @@
     display: block;
     content: "";
     clear: both;
+}
+.container{
+    padding: 100px 0;
+    width: 1110px;
+    margin: 0 auto;
 }
 
 body{

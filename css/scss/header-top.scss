@@ -6,7 +6,7 @@
     vertical-align: 20;
     margin-left: 30px;  
     
-    :first-child{
+    &:first-child{
         margin: 0;
     } 
 }
@@ -16,7 +16,9 @@
     padding: 0;
 }
 
-
+.header-top > .container{
+    padding: 0;
+}
 
 .header-top{
     background: #1abc9c;
@@ -24,14 +26,6 @@
     font-size: 14px;
     color: #fefefe;
 }
-
-.container{
-    padding: 0;
-    height: 50px; 
-    width: 1110px;
-    margin: 0 auto;
-}
-
 
 .phone-email{   
     @extend %ul-header-top;  
@@ -41,7 +35,7 @@
     }
 }
 
-.menu{
+.myAccount{
     @extend %ul-header-top;
     float: right;
     li{
@@ -49,7 +43,14 @@
         a{
             color: #fefefe;
             text-decoration: none;
+            
         }
     }
 }
+
+
+
+
+
+
 

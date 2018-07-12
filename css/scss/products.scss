@@ -1,0 +1,62 @@
+%text-products{
+    font-family: 'Roboto';
+    font-size: 16px;
+    line-height: 32px;
+    color: #555252;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.group-elem{
+    display: flex;
+    justify-content: center;
+}
+
+.button-group{
+    li{  
+        display: inline-block; 
+        @extend %text-products;     
+        margin-right: 15px;
+        border: 1px #222222 solid;
+        border-radius: 5px;
+        padding: 0 15px;
+        cursor: pointer;
+
+        &:last-child{
+            margin-right: 0;
+        }
+
+        &:hover{
+            color: #ffffff;
+            background: #1abc9c;
+            border-color: #1abc9c;
+        }
+
+    }
+
+    span{
+        display: none;
+    }
+}
+.product{
+    background: #e9f0fd;
+    img{
+        //height: 150px;
+        position: absolute;
+    }
+}
+.product1{
+    background: url(../../img/product1.png)
+}
+
+.product2{
+    background: url(../../img/product2.png)
+}
+
+.product3{
+    background: url(../../img/product3.png)
+}
+
+.product4{
+    background: url(../../img/product4.png)
+}

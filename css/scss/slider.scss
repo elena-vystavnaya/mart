@@ -1,0 +1,68 @@
+.slider{
+    background-image: url(../../img/slider.jpg);
+    height: 600px;
+    padding-top: 210px; 
+    text-align: center;
+
+    .left{
+        float: left;
+    }
+    
+    .right{
+        float: right;
+    }
+    
+    .coursor{
+        top: 50%;
+        width: 105px;
+        height: 105px;
+        background: #469280;
+        color: #ffffff;
+        text-align: center;
+        span{
+            font-size: 90px;
+            color: #ffffff;
+        }
+    }
+    
+}
+
+%h1-h2{
+    text-transform: uppercase;
+    color: #fffcfc;
+    font-size: 48px;
+    vertical-align: -20;  
+}
+
+h1{
+    @extend %h1-h2;
+    font-family: 'Roboto Light';
+    span{
+        color: #1abc9c;
+    }
+}
+
+h2{
+    @extend %h1-h2;
+    font-family: 'Open Sans Regular';
+}
+
+.buyNow{
+
+    :hover{
+        background: #1abc9c;
+    }
+
+    display: inline-block;
+    font-family: 'Roboto';
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #ffffff;
+    border: 2px #1abc9c solid; 
+    text-shadow: none;
+    margin-top: 25px;
+    padding: 10px 30px;
+    
+}
+
+
