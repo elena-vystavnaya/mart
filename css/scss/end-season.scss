@@ -1,0 +1,28 @@
+.end-season{
+   // content: '';
+    padding: 15px 0;
+    background: url(../../img/offer-bg.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+   // text-align: center;
+
+    h1{
+        font-family: 'Open Sans';
+        font-size: 50px;
+        text-transform: uppercase;
+        font-weight: 900;
+        margin: 0;
+        color: #ffffff;
+        text-align: center;
+    }
+
+    h2{
+        font-family: 'Open Sans';
+        font-size: 38px;
+        font-weight: 300;
+        margin: 0;
+        color: #ffffff;
+        text-align: center;
+    }
+}

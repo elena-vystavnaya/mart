@@ -14,12 +14,8 @@
 
 .titles{
     h2{
-        @extend %style-text;
-        text-align: center;
-        font-size: 48px;
-        color: #515151;
+        @extend %h2-style-text;
         margin-bottom: 80px;
-        font-weight: 900;
     }
 }
 

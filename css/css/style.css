@@ -168,7 +168,7 @@ h2 {
     color: #555252;
     vertical-align: -20; }
 
-.titles h2, .block-clothes .link span, .block-clothes .link h3 {
+.block-clothes .link span, .block-clothes .link h3 {
   font-family: 'Roboto';
   text-transform: uppercase;
   font-weight: 700;
@@ -181,11 +181,7 @@ h2 {
   background: #e9f0fd; }
 
 .titles h2 {
-  text-align: center;
-  font-size: 48px;
-  color: #515151;
-  margin-bottom: 80px;
-  font-weight: 900; }
+  margin-bottom: 80px; }
 
 .blocks-clothes-flex {
   display: flex;
@@ -382,7 +378,76 @@ h2 {
     .block-clothes-hover .addToCart:hover {
       background: #1abc9c; }
 
+.end-season {
+  padding: 15px 0;
+  background: url(../../img/offer-bg.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%; }
+  .end-season h1 {
+    font-family: 'Open Sans';
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin: 0;
+    color: #ffffff;
+    text-align: center; }
+  .end-season h2 {
+    font-family: 'Open Sans';
+    font-size: 38px;
+    font-weight: 300;
+    margin: 0;
+    color: #ffffff;
+    text-align: center; }
+
+.review {
+  text-align: center; }
+  .review img {
+    height: 225px;
+    width: 225px;
+    border-radius: 50%; }
+  .review h3 {
+    font-family: 'Open Sans';
+    font-size: 18px;
+    line-height: 25px;
+    color: #1abc9c;
+    font-weight: 700;
+    margin: 0; }
+
+.olivia {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 80px; }
+  .olivia p {
+    margin: 30px 0; }
+    .olivia p:last-child {
+      margin: 0; }
+
+.block-images {
+  text-align: center;
+  padding-top: 25px; }
+  .block-images ul {
+    padding: 0;
+    margin: 0; }
+  .block-images .image-member {
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    margin-right: 20px; }
+    .block-images .image-member:last-child {
+      margin-right: 0; }
+
 /* FONTS */
+.titles h2, .review h1 {
+  text-align: center;
+  font-family: 'Roboto';
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 30px;
+  color: #515151; }
+
 .clearfix:after {
   display: block;
   content: "";
