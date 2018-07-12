@@ -13,7 +13,9 @@
     }
     
     .coursor{
-        top: 50%;
+       // top: 50%;
+       padding-top: 13px;
+        font-size: 50px;
         width: 105px;
         height: 105px;
         background: #469280;
@@ -51,6 +53,7 @@ h2{
 
     :hover{
         background: #1abc9c;
+        
     }
 
     display: inline-block;
@@ -62,7 +65,6 @@ h2{
     text-shadow: none;
     margin-top: 25px;
     padding: 10px 30px;
-    
 }
 
 
