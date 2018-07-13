@@ -1,18 +1,67 @@
-.slider{
-    background-image: url(../../img/slider.jpg);
-    height: 600px;
-    padding-top: 210px; 
-    text-align: center;
+%h1-h2{
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 48px;
+    vertical-align: -20; 
+    font-family: 'Roboto'; 
+    font-weight: 300;
+}
 
-    .left{
+.title-text{
+    bottom: 25%;
+}
+
+.slider{
+    //background-image: url(../../img/slider.jpg);
+    //height: 600px;
+    
+    text-align: center;
+ 
+    h1{
+        @extend %h1-h2;    
+        
+        span{
+             color: #1abc9c;
+             font-weight: 400;
+         }
+    }
+    
+    h2{
+        @extend %h1-h2;
+        font-family: 'Open Sans';
+        font-weight: 400;
+
+        span{
+            color: #1abc9c;
+            font-weight: 300;
+        }
+    }
+    
+    .buyNow{
+        @extend %h1-h2;
+        display: inline-block;
+        font-size: 14px;
+        border: 2px #1abc9c solid; 
+        text-shadow: none;
+        margin-top: 25px;
+        padding: 10px 30px;
+
+        &:hover{
+            background: #1abc9c;
+            text-decoration: none;
+            color: #ffffff;
+        }
+    }
+}
+ /*   .left{
         float: left;
     }
     
     .right{
         float: right;
-    }
+    }*/
     
-    .coursor{
+    /*.coursor{
        // top: 50%;
        padding-top: 13px;
         font-size: 50px;
@@ -31,47 +80,9 @@
             font-size: 90px;
             color: #ffffff;
         }
-    }
+    }*/
     
-}
 
-%h1-h2{
-    text-transform: uppercase;
-    color: #fffcfc;
-    font-size: 48px;
-    vertical-align: -20;  
-}
 
-h1{
-    @extend %h1-h2;
-    font-family: 'Roboto Light';
-    span{
-        color: #1abc9c;
-    }
-}
-
-h2{
-    @extend %h1-h2;
-    font-family: 'Open Sans Regular';
-}
-
-.buyNow{
-
-    &:hover{
-        background: #1abc9c;
-        text-decoration: none;
-        color: #ffffff;
-    }
-
-    display: inline-block;
-    font-family: 'Roboto';
-    font-size: 14px;
-    text-transform: uppercase;
-    color: #ffffff;
-    border: 2px #1abc9c solid; 
-    text-shadow: none;
-    margin-top: 25px;
-    padding: 10px 30px;
-}
 
 

@@ -7,6 +7,7 @@
    
     <link rel="stylesheet" href="css/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/css/all.css"> 
+    <link rel="stylesheet" href="css/css/animate.min.css">
     <link rel="stylesheet" href="css/css/pe-icon-7-stroke.css">
     <link rel='stylesheet' href="css/css/style.css">
     
@@ -58,8 +59,8 @@
             </div>
     </header>
 
-    <section class="slider">
-        <a href="#" class="left coursor">
+    <section class="slider awSlider">
+      <!--  <a href="#" class="left coursor">
             <i class="fas fa-angle-left"></i>
         </a>
         <a href="#" class="right coursor">
@@ -68,10 +69,42 @@
 
         <h1>Dresses <span>&</span> Jeans</h1>
         <h2>from ourfamous brands <span>sale</span></h2>
-        <a href='#' class='buyNow'>Buy now</a>
+        <a href='#' class='buyNow'>Buy now</a> -->
+        <!--Slider-->
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="img/slider.jpg">
+                    <div class=" title-text carousel-caption d-none d-md-block">
+                        <h1>Dresses <span>&</span> Jeans</h1>
+                        <h2>from ourfamous brands <span>sale</span></h2>
+                        <a href='#' class='buyNow'>Buy now</a>
+                    </div>
+                </div>
+            
+            <div class="carousel-item">
+                <img class="d-block w-100" src="img/slider.jpg">
+                    <div class="title-text carousel-caption d-none d-md-block">
+                        <h1>Dresses <span>&</span> Jeans</h1>
+                        <h2>from ourfamous brands <span>sale</span></h2>
+                        <a href='#' class='buyNow'>Buy now</a>
+                    </div>
+            </div>
+        </div>
+   
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+            </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
     </section>
 
-    <section class="textBlocks">
+    <section class="textBlocks wow fadeInRight animated">
         <div class="container">
             <div class="block-text">
                 <div class="hoverH3">
@@ -446,15 +479,41 @@
                         <span> Phone:</span>  1.555.555.5555<br>
                         <span> Email:</span> info@yourdomain.com
                     </p>
+
+                    <ul>
+                        <li>
+                            <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <i class="fab fa-dribbble"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
 
-                <div class="container-block">
+
+
+                <div class="contacts-block">
                     <form>
                         <input type="text" name="" id="" placeholder="Your Name">
                         <input type="email" name="" id="" placeholder="Your Email">
                         <input type="text" name="" id="" placeholder="Subject">
                         <input type="url" name="" id="" placeholder="Website URL">
                         <textarea name="" id=""placeholder="Your Message..."></textarea>
+                        <button>send</button>
                     </form>
                 </div>
             </div>
@@ -466,6 +525,7 @@
     </footer>
 
     <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/wow.min.js"></script> 
     <script src="js/all.js"></script> 
     <script src="js/bootstrap.min.js"></script>
     <script src="js/index.js"></script>

@@ -97,59 +97,67 @@
   font-weight: 700;
   color: #0f0101; }
 
-.slider {
-  background-image: url(../../img/slider.jpg);
-  height: 600px;
-  padding-top: 210px;
-  text-align: center; }
-  .slider .left {
-    float: left; }
-  .slider .right {
-    float: right; }
-  .slider .coursor {
-    padding-top: 13px;
-    font-size: 50px;
-    width: 105px;
-    height: 105px;
-    background: #469280;
-    opacity: 0.5;
-    color: #ffffff;
-    text-align: center; }
-    .slider .coursor:hover {
-      opacity: 1; }
-    .slider .coursor span {
-      font-size: 90px;
-      color: #ffffff; }
-
-h1, h2 {
-  text-transform: uppercase;
-  color: #fffcfc;
-  font-size: 48px;
-  vertical-align: -20; }
-
-h1 {
-  font-family: 'Roboto Light'; }
-  h1 span {
-    color: #1abc9c; }
-
-h2 {
-  font-family: 'Open Sans Regular'; }
-
-.buyNow {
-  display: inline-block;
-  font-family: 'Roboto';
-  font-size: 14px;
+.slider h1, .slider h2, .slider .buyNow {
   text-transform: uppercase;
   color: #ffffff;
-  border: 2px #1abc9c solid;
-  text-shadow: none;
-  margin-top: 25px;
-  padding: 10px 30px; }
-  .buyNow:hover {
-    background: #1abc9c;
-    text-decoration: none;
-    color: #ffffff; }
+  font-size: 48px;
+  vertical-align: -20;
+  font-family: 'Roboto';
+  font-weight: 300; }
 
+.title-text {
+  bottom: 25%; }
+
+.slider {
+  text-align: center; }
+  .slider h1 span {
+    color: #1abc9c;
+    font-weight: 400; }
+  .slider h2 {
+    font-family: 'Open Sans';
+    font-weight: 400; }
+    .slider h2 span {
+      color: #1abc9c;
+      font-weight: 300; }
+  .slider .buyNow {
+    display: inline-block;
+    font-size: 14px;
+    border: 2px #1abc9c solid;
+    text-shadow: none;
+    margin-top: 25px;
+    padding: 10px 30px; }
+    .slider .buyNow:hover {
+      background: #1abc9c;
+      text-decoration: none;
+      color: #ffffff; }
+
+/*   .left{
+       float: left;
+   }
+   
+   .right{
+       float: right;
+   }*/
+    /*.coursor{
+       // top: 50%;
+       padding-top: 13px;
+        font-size: 50px;
+        width: 105px;
+        height: 105px;
+        background: #469280;
+        opacity: 0.5;
+        color: #ffffff;
+        text-align: center;
+
+        &:hover{
+            opacity: 1;
+        }
+        
+        span{
+            font-size: 90px;
+            color: #ffffff;
+        }
+    }*/
 .textBlocks > .container {
   text-align: center;
   display: flex;
@@ -540,7 +548,7 @@ h2 {
   .news-block:last-child {
     margin-right: 30px; }
 
-.contacts h3, .contacts h4, .contacts p, .container-block input, .container-block textarea {
+.contacts h3, .contacts h4, .contacts p, .contacts-block input, .contacts-block textarea {
   font-family: 'Roboto';
   color: #ffffff;
   font-weight: 300; }
@@ -564,28 +572,57 @@ h2 {
   .contacts p {
     font-size: 14px;
     line-height: 24px; }
+  .contacts ul {
+    padding: 0;
+    margin: 0; }
+  .contacts li {
+    display: inline-block;
+    border: 1px #ffffff solid;
+    margin-right: 10px;
+    width: 35px;
+    height: 35px;
+    font-size: 13px;
+    text-align: center;
+    padding: 7px;
+    background: transparent;
+    list-style: none; }
+    .contacts li a {
+      color: #ffffff; }
+    .contacts li:hover {
+      background: #46bfa9;
+      border-color: #46bfa9; }
   .contacts span {
     color: #46bfa9;
     font-weight: bold; }
 
-.container-block {
+.contacts-block {
   margin: 15px;
   margin-top: 0; }
-  .container-block form {
+  .contacts-block form {
     width: 100%; }
-  .container-block input, .container-block textarea {
+  .contacts-block input, .contacts-block textarea {
     background: transparent;
     margin: 15px;
     border: 1px #ffffff solid;
     padding: 15px;
     color: #ffffff; }
-    .container-block input:nth-child(n-2), .container-block textarea:nth-child(n-2) {
+    .contacts-block input:nth-child(n-2), .contacts-block textarea:nth-child(n-2) {
       margin-top: 0; }
-  .container-block ::-webkit-input-placeholder {
+  .contacts-block ::-webkit-input-placeholder {
     color: #ffffff; }
-  .container-block textarea {
+  .contacts-block textarea {
     width: calc(100% - 30px);
     height: 150px; }
+  .contacts-block button {
+    padding: 10px 40px;
+    background: #46bfa9;
+    color: #ffffff;
+    text-transform: uppercase;
+    border: none;
+    font-family: 'Roboto';
+    font-size: 16px;
+    line-height: 45px;
+    margin-left: 15px; }
 
 footer {
   background: #000000; }
