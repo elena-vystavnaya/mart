@@ -1,5 +1,14 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,700,500italic,700italic,900,900italic);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,600,600italic,700,800,400italic);
+.titles h2, .review h1, .newsletter h2, .news h2, .contacts h2 {
+  text-align: center;
+  font-family: 'Roboto';
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 30px;
+  color: #515151; }
+
 .phone-email li, .myAccount li {
   display: inline-block;
   text-decoration: none;
@@ -37,7 +46,8 @@
   font-family: 'Open Sans Light';
   font-size: 14px;
   color: #fefefe;
-  height: 90px; }
+  height: 90px;
+  width: 100%; }
 
 .header-menu > .container {
   padding-top: 25px;
@@ -102,8 +112,11 @@
     width: 105px;
     height: 105px;
     background: #469280;
+    opacity: 0.5;
     color: #ffffff;
     text-align: center; }
+    .slider .coursor:hover {
+      opacity: 1; }
     .slider .coursor span {
       font-size: 90px;
       color: #ffffff; }
@@ -132,8 +145,10 @@ h2 {
   text-shadow: none;
   margin-top: 25px;
   padding: 10px 30px; }
-  .buyNow :hover {
-    background: #1abc9c; }
+  .buyNow:hover {
+    background: #1abc9c;
+    text-decoration: none;
+    color: #ffffff; }
 
 .textBlocks > .container {
   text-align: center;
@@ -183,7 +198,7 @@ h2 {
 .titles h2 {
   margin-bottom: 80px; }
 
-.blocks-clothes-flex {
+.container-flex {
   display: flex;
   justify-content: center; }
 
@@ -402,7 +417,7 @@ h2 {
 
 .review {
   text-align: center; }
-  .review img {
+  .review .active-img {
     height: 225px;
     width: 225px;
     border-radius: 50%; }
@@ -431,23 +446,160 @@ h2 {
     margin: 0; }
   .block-images .image-member {
     display: inline-block;
-    width: 75px;
-    height: 75px;
+    width: 85px;
+    height: 85px;
     border-radius: 50%;
-    margin-right: 20px; }
+    margin-right: 20px;
+    border: 5px #252525 solid;
+    position: relative;
+    overflow: hidden; }
     .block-images .image-member:last-child {
       margin-right: 0; }
+    .block-images .image-member img {
+      width: 100%;
+      height: auto;
+      position: absolute;
+      top: 0;
+      left: 0; }
+
+.newsletter {
+  background: #4ec6ab;
+  background-image: url(../../img/bg.png);
+  background-size: cover;
+  background-attachment: fixed; }
+  .newsletter p {
+    text-align: center;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    line-height: 26px;
+    color: #ffffff;
+    font-weight: 300;
+    margin-top: 70px;
+    margin-bottom: 45px; }
+  .newsletter form {
+    text-align: center; }
+  .newsletter .form-group {
+    position: relative;
+    width: 540px;
+    height: 61px;
+    margin: 0 auto; }
+  .newsletter input[type=email] {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 5px; }
+  .newsletter button {
+    position: absolute;
+    padding: 16px;
+    background: #4ec6ab;
+    border: none;
+    right: 2px;
+    top: 2px;
+    bottom: 2px;
+    width: 100px;
+    border-radius: 0 5px 5px 0; }
+    .newsletter button i {
+      color: #ffffff;
+      font-size: 25px; }
+
+.news h2 {
+  margin-bottom: 115px; }
+.news h3 {
+  font-family: 'Open Sans';
+  font-size: 18px;
+  color: #555252;
+  line-height: 26px;
+  font-weight: 600; }
+.news p {
+  font-family: 'Open Sans';
+  font-size: 14px;
+  color: #555252;
+  line-height: 26px;
+  margin-top: 25px;
+  padding-bottom: 18px; }
+.news img {
+  margin-bottom: 13px; }
+.news a {
+  padding: 15px 40px;
+  font-family: 'Open Sans';
+  font-size: 16px;
+  line-height: 26px;
+  color: #ffffff;
+  background: #4ec6ab;
+  border-radius: 5px; }
+  .news a:hover {
+    background: #17A689;
+    text-decoration: none;
+    transition: all 0.5s; }
+
+.news-block {
+  margin-right: 30px; }
+  .news-block:last-child {
+    margin-right: 30px; }
+
+.contacts h3, .contacts h4, .contacts p, .container-block input, .container-block textarea {
+  font-family: 'Roboto';
+  color: #ffffff;
+  font-weight: 300; }
+
+.contacts {
+  background: url(../../img/map-bg.png) #2d3237 no-repeat;
+  background-position: center; }
+  .contacts h2 {
+    color: #ffffff;
+    margin-bottom: 120px; }
+  .contacts h3 {
+    font-size: 72px;
+    line-height: 45px; }
+    .contacts h3::first-letter {
+      color: #4ec6ab; }
+  .contacts h4 {
+    font-size: 18px;
+    line-height: 10px;
+    font-weight: 400;
+    margin: 25px 0; }
+  .contacts p {
+    font-size: 14px;
+    line-height: 24px; }
+  .contacts span {
+    color: #46bfa9;
+    font-weight: bold; }
+
+.container-block {
+  margin: 15px;
+  margin-top: 0; }
+  .container-block form {
+    width: 100%; }
+  .container-block input, .container-block textarea {
+    background: transparent;
+    margin: 15px;
+    border: 1px #ffffff solid;
+    padding: 15px;
+    color: #ffffff; }
+    .container-block input:nth-child(n-2), .container-block textarea:nth-child(n-2) {
+      margin-top: 0; }
+  .container-block ::-webkit-input-placeholder {
+    color: #ffffff; }
+  .container-block textarea {
+    width: calc(100% - 30px);
+    height: 150px; }
+
+footer {
+  background: #000000; }
+  footer p {
+    text-align: center;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #fefefe;
+    padding: 20px;
+    margin: 0; }
 
 /* FONTS */
-.titles h2, .review h1 {
-  text-align: center;
-  font-family: 'Roboto';
-  text-transform: uppercase;
-  font-weight: 900;
-  font-size: 48px;
-  line-height: 30px;
-  color: #515151; }
-
 .clearfix:after {
   display: block;
   content: "";

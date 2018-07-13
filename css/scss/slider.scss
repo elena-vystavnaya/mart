@@ -19,8 +19,14 @@
         width: 105px;
         height: 105px;
         background: #469280;
+        opacity: 0.5;
         color: #ffffff;
         text-align: center;
+
+        &:hover{
+            opacity: 1;
+        }
+        
         span{
             font-size: 90px;
             color: #ffffff;
@@ -51,9 +57,10 @@ h2{
 
 .buyNow{
 
-    :hover{
+    &:hover{
         background: #1abc9c;
-        
+        text-decoration: none;
+        color: #ffffff;
     }
 
     display: inline-block;

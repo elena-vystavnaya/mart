@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
    
-    <script src="js/all.js"></script> 
     <link rel="stylesheet" href="css/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/css/all.css"> 
     <link rel="stylesheet" href="css/css/pe-icon-7-stroke.css">
@@ -129,7 +128,7 @@
                 <!--что-то-->
             </div>  
             <!--блок, для группы блоков-->
-            <div class='blocks-clothes-flex'>
+            <div class='container-flex'>
                 <!--:hover для блоков-->
                 <div class="block-clothes-hover">
                         <div class="group-icons">
@@ -335,7 +334,7 @@
         <div class="container">
             <h1>customer review</h1>
             <div class="olivia">
-                <img src="img/member1.png">
+                <img src="img/member1.png" class="active-img">
                 <p>Lorem ipsum dolor sit amet, consectetuer
                     adipiscing elit. Aenean commodo ligula 
                     eget dolor. Aenean massa. Cum sociis 
@@ -355,21 +354,119 @@
             <div class="block-images">
                 <ul>
                     <li class="image-member" id="member1">
-                        <img src="img/member1.png" class="image-member">
+                        <img src="img/member1.png" >
                     </li>
                     <li class="image-member" id="member2">
-                        <img src="img/member2.png" class="image-member">
+                        <img src="img/member2.png" >
                     </li>
                     <li class="image-member" id="member3">
-                        <img src="img/member3.png" class="image-member">
+                        <img src="img/member3.png" >
                     </li>
                 </ul>
             </div>
         </div>
     </section>
 
+    <section class="newsletter">
+        <div class="container">
+            <h2>newsletter</h2>
+            <p>Follow a collection of news & promotions</p>
+            <form>
+                <div class="form-group">
+                    <input type="email" placeholder="Enter to email">
+                    <button>
+                        <i class="pe-7s-next"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="news">
+        <div class="container">
+            <h2>latest news</h2>
+            <div class="container-flex">
+                <div class="news-block">
+                    <img src="img/blog1.jpg">
+                    <h3>Lorem Ipsum. Proin gravida 
+                        nibh vel velit auctor aliquet. Aenean</h3>
+                    <p>Nam nec tellus a odio tincidunt auc.
+                         Duis sed odio sit amet nibh 
+                         vulputate cursus a sit amet mauris. 
+                         Morbi accumsan ipsum velit. Nam nec 
+                         tellus a odio tincidunt
+                    </p>
+                    <a href="#">Read More</a>
+                </div>
+
+                <div class="news-block">
+                    <img src="img/blog2.jpg">
+                    <h3>Lorem Ipsum. Proin gravida 
+                        nibh vel velit auctor aliquet. Aenean</h3>
+                    <p>Nam nec tellus a odio tincidunt auc.
+                            Duis sed odio sit amet nibh 
+                            vulputate cursus a sit amet mauris. 
+                            Morbi accumsan ipsum velit. Nam nec 
+                            tellus a odio tincidunt
+                    </p>
+                    <a href="#">Read More</a>
+                </div>
+
+                <div class="news-block">
+                    <img src="img/blog3.jpg">
+                    <h3>Lorem Ipsum. Proin gravida 
+                        nibh vel velit auctor aliquet. Aenean</h3>
+                    <p>Nam nec tellus a odio tincidunt auc.
+                            Duis sed odio sit amet nibh 
+                            vulputate cursus a sit amet mauris. 
+                            Morbi accumsan ipsum velit. Nam nec 
+                            tellus a odio tincidunt
+                    </p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacts">
+        <div class="container">
+            <h2>get in touch</h2>
+            <div class="container-flex">
+                <div class="contacts-block">
+                    <h3>Mart</h3>
+                    <h4>We'd love To Meet You In Person Or Via The Web!</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Morbi vel nulla sapien. Class aptent tacitiaptent taciti 
+                        sociosqu ad lit himenaeos. Suspendisse massa urna,
+                        luctus ut vestibulum necs et, vulputate quis urna.
+                        Donec at commodo erat.
+                    </p>
+                    <p> 
+                        <span> Main Office:</span> 123 Elm St. New York City, NY<br>
+                        <span> Phone:</span>  1.555.555.5555<br>
+                        <span> Email:</span> info@yourdomain.com
+                    </p>
+                </div>
+
+                <div class="container-block">
+                    <form>
+                        <input type="text" name="" id="" placeholder="Your Name">
+                        <input type="email" name="" id="" placeholder="Your Email">
+                        <input type="text" name="" id="" placeholder="Subject">
+                        <input type="url" name="" id="" placeholder="Website URL">
+                        <textarea name="" id=""placeholder="Your Message..."></textarea>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Elena Vystavnaya</p>
+    </footer>
+
     <script src="js/jquery-3.3.1.min.js"></script>
-    
+    <script src="js/all.js"></script> 
     <script src="js/bootstrap.min.js"></script>
     <script src="js/index.js"></script>
     

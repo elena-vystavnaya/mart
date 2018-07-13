@@ -5,7 +5,7 @@
         @extend %h2-style-text;
     }
 
-    img{
+    .active-img{
         height: 225px;
         width: 225px;
         border-radius: 50%;
@@ -45,13 +45,24 @@
 
     .image-member{
         display: inline-block;
-        width: 75px;
-        height: 75px;
+        width: 85px;
+        height: 85px;
         border-radius: 50%;
         margin-right: 20px;
+        border: 5px #252525 solid; 
+        position: relative;
+        overflow: hidden;
 
         &:last-child{
             margin-right: 0;
+        }
+
+        img{
+            width: 100%;
+            height: auto;
+            position: absolute;
+            top: 0;
+            left:0;
         }
     }
 }

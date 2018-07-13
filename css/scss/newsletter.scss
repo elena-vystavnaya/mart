@@ -1,0 +1,60 @@
+
+.newsletter{
+    background: #4ec6ab;
+    background-image: url(../../img/bg.png);
+    background-size: cover;
+    background-attachment: fixed;
+    h2{
+        @extend %h2-style-text;
+    }
+    p{
+        text-align: center;
+        font-family: 'Open Sans';
+        font-size: 16px;
+        line-height: 26px;
+        color: #ffffff;
+        font-weight: 300;
+        margin-top: 70px;
+        margin-bottom: 45px;
+    }
+
+    form{
+        text-align: center;
+       // margin-bottom: 130px;
+    }
+
+    .form-group{
+        position: relative;
+        width: 540px;
+        height: 61px;
+        margin: 0 auto;
+        
+    }
+    input[type=email]{
+        font-family: 'Open Sans';
+        font-size: 16px;
+        padding: 20px;
+        width: 100%;
+        height: 100%;
+      //  line-height: 26px;
+        border: none;
+        border-radius: 5px;
+    }
+
+    button{
+        position: absolute;
+        padding: 16px;
+        background: #4ec6ab;
+        border: none;
+        right: 2px;
+        top: 2px;
+        bottom: 2px;
+        width: 100px;
+        border-radius: 0 5px 5px 0;
+        i{
+            color: #ffffff;
+            font-size: 25px;
+        }
+    }
+
+}

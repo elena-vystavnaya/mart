@@ -1,0 +1,73 @@
+%contacts-style-text{
+    font-family: 'Roboto';
+    color: #ffffff;
+    font-weight: 300;
+}
+.contacts{
+    background: url(../../img/map-bg.png) #2d3237 no-repeat;
+    background-position: center;
+    
+    h2{
+        @extend %h2-style-text;
+        color: #ffffff;
+        margin-bottom: 120px;
+    }
+
+    h3{
+        @extend %contacts-style-text;
+        font-size: 72px;
+        line-height: 45px;
+
+        &::first-letter{
+            color: #4ec6ab;
+        }
+    }
+
+    h4{
+        @extend %contacts-style-text;
+        font-size: 18px;
+        line-height: 10px;
+        font-weight: 400;
+        margin: 25px 0;
+    }
+    
+    p{
+        @extend %contacts-style-text;
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+span{
+        color: #46bfa9;
+        font-weight: bold;
+    }
+}
+
+.container-block{
+    margin: 15px;
+    margin-top: 0;
+    form{
+        width: 100%;
+    }
+    input, textarea{
+        @extend %contacts-style-text;
+        background: transparent;
+        margin: 15px;
+        border: 1px #ffffff solid;
+        padding: 15px;
+        color: #ffffff;
+
+        &:nth-child(n-2){
+            margin-top: 0;
+        }
+    }
+
+    ::-webkit-input-placeholder{
+        color: #ffffff;
+    }
+
+    textarea{
+        width: calc(100% - 30px);
+        height: 150px;
+    }
+}
