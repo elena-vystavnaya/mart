@@ -1,7 +1,6 @@
 .news{
     h2{
-        @extend %h2-style-text;
-        margin-bottom: 115px;
+        margin-bottom: 55px;
     }
 
     h3{
@@ -24,6 +23,7 @@
 
     img{
         margin-bottom: 13px;
+        width: 100%;
     }
 
     a{
@@ -45,8 +45,20 @@
 }
 
 .news-block{
-    margin-right: 30px;
-    &:last-child{
-        margin-right: 30px;
+    margin: 15px;
+    width: 30%;
+}
+
+@media screen and (max-width: 950px){
+    .news-block{
+        width: 25%;
     }
+}
+
+@media screen and (max-width: 760px){
+    .news-block{
+        width: 70%;
+        text-align: center;
+    }
+
 }

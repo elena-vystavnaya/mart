@@ -1,26 +1,18 @@
-%h2-style-text{
-    text-align: center;
-    font-family: 'Roboto';
-    text-transform: uppercase;
-    font-weight: 900;
-    font-size: 48px;
-    line-height: 30px;
-    color: #515151;
-}
-
 @import 'header-top';
 @import 'header-menu';
 @import 'slider';
 @import 'textBlocks';
 @import 'clothes';
+@import 'block-hover';
 @import 'products';
-@import 'block-for-clothes-&-products';
 @import 'end-season';
 @import 'review';
 @import 'newsletter';
 @import 'news';
 @import 'contacts';
 @import 'footer';
+@import 'block-hover.scss';
+
 
 
 /* FONTS */
@@ -28,6 +20,15 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,600,600italic,700,800,400italic);
 
 
+*, *:after, *:before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.animated{
+    transition: .5s ease-in-out;
+}
 
 
 .clearfix:after{
@@ -35,10 +36,17 @@
     content: "";
     clear: both;
 }
-.container{
+.containers{
     padding: 100px 0;
-    width: 1110px;
+    max-width: 1170px;
     margin: 0 auto;
+}
+
+.container-flex{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 15px; 
 }
 
 body{
@@ -48,4 +56,21 @@ body{
 
 div{
     box-sizing: border-box;
+}
+
+h2{
+    text-align: center;
+    font-family: 'Roboto';
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 60px;
+    color: #515151;
+    vertical-align: 20;
+}
+
+@media screen and (max-width: 767px){
+    h2 {
+        font-size: 26px;
+    }
 }

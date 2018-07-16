@@ -1,10 +1,6 @@
 .review{
     text-align: center;
 
-    h1{
-        @extend %h2-style-text;
-    }
-
     .active-img{
         height: 225px;
         width: 225px;
@@ -24,7 +20,7 @@
 .olivia{
     width: 75%;
     margin: 0 auto;
-    padding-top: 80px;
+    padding-top: 50px;
     
     p{
         margin: 30px 0;

@@ -1,4 +1,4 @@
-%style-text{
+%text-clothes{
     font-family: 'Roboto';
     text-transform: uppercase;
     font-weight: 700;
@@ -12,33 +12,18 @@
     background: #e9f0fd;  
 }
 
-.titles{
-    h2{
-        @extend %h2-style-text;
-        margin-bottom: 80px;
-    }
-}
+.product{
+    margin: 15px;
+    margin-top: 80px;
 
-.container-flex{
-    display: flex;
-    justify-content: center;
-}
-
-.block-clothes{
-    height: 320px;
-    width: 255px;
-    display: flex;
-    align-items: flex-end;
-    box-sizing: border-box;
-    position: relative;
-    margin-right: 30px;
-
-    &:last-child{
-        margin-right: 0;
+    img{
+        width: 100%;
+        height: auto;
     }
 
     .link{
         width: 100%;
+        height: 25px;
         a{
             display: flex;
             align-items: flex-end;
@@ -47,14 +32,14 @@
         
         span{
             width: 55px;
-            @extend %style-text;
+            @extend %text-clothes;
             background: #8c8c8c;
             padding-left: 10px;
         }
 
         h3{
            width: calc(100% - 55px);
-            @extend %style-text;
+            @extend %text-clothes;
             background: #323232;
             margin: 0;
             padding-left: 15px;
@@ -62,73 +47,24 @@
     }
 }
 
-.block-clothes-hover{
-    z-index: 1;
-    position: absolute;
-    top:0;
-    display: none;
-    width: 100%;
-    height: calc(100% - 40px);
-    background: rgba(115, 115, 115, 0.6);
-    padding: 75px 35px;
-    border: 10px rgb(212, 212, 212) solid;
+@media screen and (min-width: 900px ) and (max-width: 1185px ){
+    .product {
+        width: 21%;
 
-    .group-icons{
-        display: flex;
-        justify-content: center;
-        height: 50px;   
-        
-        a{
-            font-size: 30px;
-            width: 50px;
-            text-align: center;
-            border: 1px #ffffff solid;
-            color: #ffffff;
-            margin-right: 9px;
-    
-            &:last-child{
-                margin-right: 0;
-            }
-
-            &:hover{
-                background: #1abc9c;
+        .link{
+            h3{
+                font-size: 12px;    
             }
         }
-
-        i{
-            margin: 10px;
-        }
     }
-
-    .addToCart{
-        
-        margin-top: 7px;
-        width: 165px;
-        height: 50px;
-        color: #ffffff;
-        font-size: 30px;
-        background: #323232;
-        border: 1px #ffffff solid;
-    
-        a{
-            text-decoration: none;
-            width: 100%;
-            text-align: center;
-            color: #ffffff;
-            padding: 12px; 
-        }
-
-        h4{
-            margin: 0;
-            display: inline;
-            font-family: 'Open Sans';
-            text-transform: uppercase;
-            font-size: 14px;
-        }
-
-        &:hover{
-            background: #1abc9c;
-        }
-    }
-
 }
+
+@media screen and (min-width: 1185px ){
+    .product {
+        width: 21%;
+    }
+}
+
+
+
+

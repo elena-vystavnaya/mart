@@ -1,53 +1,4 @@
-.blocks-clothes-flex{
-    display: flex;
-    justify-content: center;
-    padding-top: 30px;
-}
-
-.block-clothes{
-    height: 320px;
-    width: 255px;
-    display: flex;
-    align-items: flex-end;
-    box-sizing: border-box;
-    position: relative;
-    margin-right: 30px;
-
-    &:last-child{
-        margin-right: 0;
-    }
-
-    img{
-        position: absolute;
-    }
-
-    .link{
-        width: 100%;
-        z-index: 1;
-        a{
-            display: flex;
-            align-items: flex-end;
-            text-decoration: none;
-        }
-        
-        span{
-            width: 55px;
-            @extend %style-text;
-            background: #8c8c8c;
-            padding-left: 10px;
-        }
-
-        h3{
-           width: calc(100% - 55px);
-            @extend %style-text;
-            background: #323232;
-            margin: 0;
-            padding-left: 15px;
-        }
-    }
-}
-
-.block-clothes-hover{
+.block-hover{
     z-index: 1;
     position: absolute;
     top:0;
@@ -115,4 +66,5 @@
             background: #1abc9c;
         }
     }
+
 }

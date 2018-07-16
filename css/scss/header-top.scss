@@ -16,7 +16,7 @@
     padding: 0;
 }
 
-.header-top > .container{
+.header-top > .containers{
     padding: 0;
 }
 
@@ -25,11 +25,13 @@
     font-family: 'Open Sans Light';
     font-size: 14px;
     color: #fefefe;
+    width: 100%;
 }
 
 .phone-email{   
     @extend %ul-header-top;  
     float: left; 
+    margin-left: 20px;
     li{
         @extend %li-header-top;          
     }
@@ -38,6 +40,7 @@
 .myAccount{
     @extend %ul-header-top;
     float: right;
+    margin-right: 20px;
     li{
         @extend %li-header-top;     
         a{
@@ -48,6 +51,23 @@
     }
 }
 
+@media screen and (max-width:  800px){
+    .phone-email,
+    .myAccount{
+        width: 100%;
+        float: none;
+        text-align: center;
+        margin: 0px auto;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width:  590px){
+    .phone-email,
+    .myAccount{
+        font-size: 12px;
+    }
+}
 
 
 

@@ -13,18 +13,18 @@
 }
 
 .button-group{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+   
     li{  
         display: inline-block; 
         @extend %text-products;     
-        margin-right: 15px;
+        margin: 5px;
         border: 1px #222222 solid;
         border-radius: 5px;
         padding: 0 15px;
         cursor: pointer;
-
-        &:last-child{
-            margin-right: 0;
-        }
 
         &:hover{
             color: #ffffff;
@@ -41,4 +41,13 @@
 
 .product{
     background: #e9f0fd;
+}
+
+@media screen and (max-width: 620px){
+    .button-group{
+        width: 200px;
+        flex-flow: column wrap;
+    }
+
+
 }

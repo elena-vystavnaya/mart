@@ -15,7 +15,7 @@
 </head>
 <body>
     <section class="header-top">
-        <div class="container clearfix">
+        <div class="containers clearfix">
                     <ul class="phone-email">
                         <li>
                             <i class="pe-7s-call"></i>
@@ -43,7 +43,10 @@
     </section>
 
     <header class="header-menu">
-            <div class="container clearfix">
+            <div class="containers clearfix">
+                <button type="button" class="nav-bar">
+                        <i class="fas fa-bars"></i>
+                </button>
                 <p class='logo'>Mart</p>
                 <div class="search">
                         <i class="pe-7s-search"></i>
@@ -55,22 +58,12 @@
                     <li><a href='#'>Shop</a></li>
                     <li><a href='#'>Blog</a></li>
                     <li><a href='#'>Contact us</a></li>
-                </ul>        
+                </ul>  
+
             </div>
     </header>
 
     <section class="slider awSlider">
-      <!--  <a href="#" class="left coursor">
-            <i class="fas fa-angle-left"></i>
-        </a>
-        <a href="#" class="right coursor">
-            <i class="fas fa-angle-right"></i>
-        </a>
-
-        <h1>Dresses <span>&</span> Jeans</h1>
-        <h2>from ourfamous brands <span>sale</span></h2>
-        <a href='#' class='buyNow'>Buy now</a> -->
-        <!--Slider-->
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -105,8 +98,9 @@
     </section>
 
     <section class="textBlocks wow fadeInRight animated">
-        <div class="container">
-            <div class="block-text">
+        <div class="containers">
+            <div class="container-flex">
+            <div class="block-text ">
                 <div class="hoverH3">
                     <i class="pe-7s-settings"></i>
                     <h3>Setting</h3>
@@ -150,20 +144,21 @@
                     doctus volumus explicari qui ex, 
                     appareat similique an usu.</p>
             </div>
+            </div>
         </div>
     </section>
 
     <section class="clothes">
         <!--заголовок и еще что-то-->
-        <div class="container">
-            <div class="titles">
+        <div class="containers">
+            <div class="titles wow fadeInDown animated">
                 <h2>New collection</h2>  
                 <!--что-то-->
             </div>  
             <!--блок, для группы блоков-->
-            <div class='container-flex'>
+            <div class='container-flex wow fadeInLeft animated'>
                 <!--:hover для блоков-->
-                <div class="block-clothes-hover">
+                <div class="block-hover">
                         <div class="group-icons">
                             <a href='#'>
                                 <i class="pe-7s-like"></i>
@@ -183,7 +178,7 @@
                         </div>
                     </div>
                 <!--первый блок-->
-                <div class="block-clothes">
+                <div class="product">
                     <img src="img/1.png">
                     <!--блок со ссылкой-->
                     <div class="link">
@@ -196,7 +191,7 @@
                 </div>
 
                 <!--второй блок-->
-                <div class="block-clothes"> 
+                <div class="product"> 
                     <img src="img/2.png">
                     <!--блок со ссылкой-->
                     <div class="link">  
@@ -208,7 +203,7 @@
                 </div>
         
                 <!--третий блок-->
-                <div class="block-clothes">
+                <div class="product">
                     <img src="img/3.png">
                     <!--блок со ссылкой-->
                     <div class="link">
@@ -220,7 +215,7 @@
                 </div>
 
                 <!--четвертый блок-->
-                <div class="block-clothes">
+                <div class="product">
                     <img src="img/4.png">
                     <!--блок со ссылкой-->
                     <div class="link">     
@@ -235,7 +230,7 @@
     </section>
 
     <section class="products">
-        <div class="container">
+        <div class="containers">
             <div class="titles">
                 <h2>Featured products</h2>  
                 <!--что-то-->
@@ -250,10 +245,9 @@
                 </ul>
             </div>
 
-            <div class='blocks-clothes-flex'>
-
+            <div class='container-flex'>
                 <!--первый блок-->
-                <div class="block-clothes product">
+                <div class="product">
                     <img src="img/product1.png">
                     <!--блок со ссылкой-->
                     <div class="link">
@@ -263,9 +257,8 @@
                         </a>
                     </div>
                 </div>
-
                 <!--второй блок-->
-                <div class="block-clothes product"> 
+                <div class="product"> 
                     <img src="img/product2.png">
                     <!--блок со ссылкой-->
                     <div class="link">  
@@ -274,10 +267,9 @@
                             <span>$31</span>
                         </a>  
                     </div>            
-                </div>
-        
+                </div>      
                 <!--третий блок-->
-                <div class="block-clothes product">
+                <div class="product">
                     <img src="img/product3.png">
                     <!--блок со ссылкой-->
                     <div class="link">
@@ -287,9 +279,8 @@
                         </a>
                     </div>
                 </div>
-
                 <!--четвертый блок-->
-                <div class="block-clothes product">
+                <div class="product">
                     <img src="img/product4.png">
                     <!--блок со ссылкой-->
                     <div class="link">     
@@ -299,73 +290,68 @@
                         </a>
                     </div>
                 </div>
-            </div>
-
-            <div class='blocks-clothes-flex'>
-
-                    <!--первый блок-->
-                    <div class="block-clothes product">
-                        <img src="img/product5.png">
-                        <!--блок со ссылкой-->
-                        <div class="link">
-                            <a href="#">
-                                <h3>blue tshirt</h3>
-                                <span>$26</span>
-                            </a>
-                        </div>
+                
+                
+                 <!--первый блок-->
+                <div class="product">
+                    <img src="img/product5.png">
+                    <!--блок со ссылкой-->
+                    <div class="link">
+                        <a href="#">
+                            <h3>blue tshirt</h3>
+                            <span>$26</span>
+                        </a>
                     </div>
-    
-                    <!--второй блок-->
-                    <div class="block-clothes product"> 
-                        <img src="img/product6.png">
-                        <!--блок со ссылкой-->
-                        <div class="link">  
-                            <a href="#">
-                                <h3>woman tshirt</h3>
-                                <span>$31</span>
-                            </a>  
-                        </div>            
-                    </div>
-            
-                    <!--третий блок-->
-                    <div class="block-clothes product">
-                        <img src="img/product7.png">
-                        <!--блок со ссылкой-->
-                        <div class="link">
-                            <a href="#">
-                                <h3>yellow tshirt</h3>
-                                <span>$21</span>
-                            </a>
-                        </div>
-                    </div>
-    
-                    <!--четвертый блок-->
-                    <div class="block-clothes product">
-                        <img src="img/product8.png">
-                        <!--блок со ссылкой-->
-                        <div class="link">     
-                            <a href="#">
-                                <h3>cool lingerie</h3>
-                                <span>$26</span>
-                            </a>
-                        </div>
+                </div>   
+                <!--второй блок-->
+                <div class="product"> 
+                    <img src="img/product6.png">
+                    <!--блок со ссылкой-->
+                    <div class="link">  
+                        <a href="#">
+                            <h3>woman tshirt</h3>
+                            <span>$31</span>
+                        </a>  
+                    </div>            
+                </div>           
+                <!--третий блок-->
+                <div class="product">
+                    <img src="img/product7.png">
+                    <!--блок со ссылкой-->
+                    <div class="link">
+                        <a href="#">
+                            <h3>yellow tshirt</h3>
+                            <span>$21</span>
+                        </a>
                     </div>
                 </div>
+                <!--четвертый блок-->
+                <div class="product">
+                    <img src="img/product8.png">
+                    <!--блок со ссылкой-->
+                    <div class="link">     
+                        <a href="#">
+                            <h3>cool lingerie</h3>
+                            <span>$26</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <section class="end-season">
-        <div class="container">
+        <div class="containers">
             <div class="title-block">
                 <h1>end of season sale</h1>
-                <h2>Up to 35% off Women's Denim</h2>
+                <h3>Up to 35% off Women's Denim</h3>
             </div>
         </div>
     </section>
 
     <section class="review">
-        <div class="container">
-            <h1>customer review</h1>
+        <div class="containers">
+            <h2>customer review</h2>
             <div class="olivia">
                 <img src="img/member1.png" class="active-img">
                 <p>Lorem ipsum dolor sit amet, consectetuer
@@ -401,7 +387,7 @@
     </section>
 
     <section class="newsletter">
-        <div class="container">
+        <div class="containers">
             <h2>newsletter</h2>
             <p>Follow a collection of news & promotions</p>
             <form>
@@ -416,7 +402,7 @@
     </section>
 
     <section class="news">
-        <div class="container">
+        <div class="containers">
             <h2>latest news</h2>
             <div class="container-flex">
                 <div class="news-block">
@@ -462,7 +448,7 @@
     </section>
 
     <section class="contacts">
-        <div class="container">
+        <div class="containers">
             <h2>get in touch</h2>
             <div class="container-flex">
                 <div class="contacts-block">
@@ -503,16 +489,14 @@
                         </li>
                     </ul>
                 </div>
-
-
-
+                
                 <div class="contacts-block">
                     <form>
-                        <input type="text" name="" id="" placeholder="Your Name">
-                        <input type="email" name="" id="" placeholder="Your Email">
-                        <input type="text" name="" id="" placeholder="Subject">
-                        <input type="url" name="" id="" placeholder="Website URL">
-                        <textarea name="" id=""placeholder="Your Message..."></textarea>
+                        <input type="text" placeholder="Your Name">
+                        <input type="email" placeholder="Your Email">
+                        <input type="text" placeholder="Subject">
+                        <input type="url" placeholder="Website URL">
+                        <textarea placeholder="Your Message..."></textarea>
                         <button>send</button>
                     </form>
                 </div>
@@ -524,7 +508,7 @@
         <p>Elena Vystavnaya</p>
     </footer>
 
-    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js" ></script>
     <script src="js/wow.min.js"></script> 
     <script src="js/all.js"></script> 
     <script src="js/bootstrap.min.js"></script>
