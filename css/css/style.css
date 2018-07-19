@@ -127,7 +127,8 @@
   text-align: center; }
   #list li {
     padding: 10px;
-    background-color: transparent; }
+    background-color: transparent;
+    list-style-type: none; }
 
 .fixed {
   position: fixed;
