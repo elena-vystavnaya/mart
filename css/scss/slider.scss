@@ -1,4 +1,4 @@
-%h1-h2{
+%h1-h3{
     text-transform: uppercase;
     color: #ffffff;
     font-size: 48px;
@@ -7,32 +7,30 @@
     font-weight: 300;
 }
 
-.title-text{
-   // top: 25%;
-   // bottom: 25%;
-   // vertical-align: middle;
-   // text-align: center;
-  // height: auto;
-  // padding-bottom: 120px;
-
+.carousel-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .slider{
-    //background-image: url(../../img/slider.jpg);
-    //height: 600px;
-    text-align: center;
- 
+
+    img{
+        width: 100%;
+    }
+    
     h1{
-        @extend %h1-h2;    
-        
+        @extend %h1-h3;    
         span{
              color: #1abc9c;
              font-weight: 400;
          }
     }
     
-    h2{
-        @extend %h1-h2;
+    h3{
+        @extend %h1-h3;
         font-family: 'Open Sans';
         font-weight: 400;
 
@@ -43,13 +41,14 @@
     }
     
     .buyNow{
-        @extend %h1-h2;
+        @extend %h1-h3;
         display: inline-block;
         font-size: 14px;
         border: 2px #1abc9c solid; 
         text-shadow: none;
         margin-top: 25px;
         padding: 10px 30px;
+        text-decoration: none;
 
         &:hover{
             background: #1abc9c;
@@ -58,32 +57,63 @@
         }
     }
 }
- /*   .left{
-        float: left;
-    }
-    
-    .right{
-        float: right;
-    }*/
-    
-    /*.coursor{
-       // top: 50%;
-       padding-top: 13px;
-        font-size: 50px;
-        width: 105px;
-        height: 105px;
-        background: #469280;
-        opacity: 0.5;
-        color: #ffffff;
-        text-align: center;
 
-        &:hover{
-            opacity: 1;
+.owl-carousel{
+    overflow: auto;
+}
+ 
+@media screen and (max-width: 910px){
+    .slider{
+        .buyNow{
+            font-size: 12px;
         }
-        
-        span{
-            font-size: 90px;
-            color: #ffffff;
-        }
-    }*/
     
+        h1, h3{
+            font-size: 38px;
+        }
+    }
+}
+
+@media screen and (max-width: 740px){
+
+    .slider{
+        .buyNow{
+            font-size: 12px;
+        }
+    
+        h1, h3{
+            font-size: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 480px){
+
+    .slider{
+        .buyNow{
+            font-size: 10px;
+            padding: 5px 15px;
+            margin-top: 13px;
+        }
+    
+        h1, h3{
+            font-size: 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 400px){
+
+    .slider{
+        .buyNow{
+            font-size: 10px;
+            padding: 3px 10px;
+            margin-top: 10px;
+        }
+    
+        h1, h3{
+            font-size: 12px;
+        }
+    }
+}
+

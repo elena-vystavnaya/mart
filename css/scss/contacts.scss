@@ -71,7 +71,7 @@ span{
 }
 
 .contacts-block{
-    width: 100%;
+    width: 47%;
     margin: 15px;
     
     input, textarea{
@@ -97,6 +97,7 @@ span{
     textarea{
         height: 150px;
         width: 100%;
+        overflow: auto;
     }
 
     button{
@@ -112,10 +113,11 @@ span{
     }
 }
 
-@media screen and (max-width: 630px){
+@media screen and (max-width: 1050px){
     .contacts-block{
        margin: 0;
        margin-bottom: 10px;
+       width: 100%;
 
         input, 
         textarea,

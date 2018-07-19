@@ -4,15 +4,11 @@
     list-style-type: none;
     line-height: 11px;
     vertical-align: 20;
-    margin-left: 30px;  
-    
-    &:first-child{
-        margin: 0;
-    } 
+    margin-left: 15px;  
 }
 
 %ul-header-top{
-    margin-top: 15px;
+    margin: 15px 0;
     padding: 0;
 }
 
