@@ -1,4 +1,5 @@
-$(document).ready(function(){
+$(function(){
+
     new WOW().init();
 
     var slider = $('.slider-carousel');
@@ -6,8 +7,7 @@ $(document).ready(function(){
         items:1,
         loop:true,
         autoplay:true,
-        autoplayTimeout:5000,
-        autoplayHoverPause:true
+        autoplayTimeout:5000
     });
 
 
