@@ -1,8 +1,18 @@
 $(document).ready(function(){
     new WOW().init();
 
-    var navHeight = 49;
+    var slider = $('.slider-carousel');
+    slider.owlCarousel({
+        items:1,
+        loop:true,
+        autoplay:true,
+        autoplayTimeout:5000,
+        autoplayHoverPause:true
+    });
+
+    var navHeight = $('.header-top').height();
     var nav = $('.header-menu');
+    alert(navHeight);
     $(window).scroll(function () {
         if ($(this).scrollTop() > navHeight ) {
             nav.addClass("fixed");
@@ -27,15 +37,7 @@ $(document).ready(function(){
         $("#list").slideToggle(1000);
     });
 
-    var slider = $('.slider-carousel');
-    slider.owlCarousel({
-        items:1,
-        loop:true,
-        autoplay:true,
-        smartSpeed:1000,
-        autoplayTimeout:5000,
-        autoplayHoverPause:true
-    });
+    
 
     var review = $('.review-carousel');
     review.owlCarousel({
