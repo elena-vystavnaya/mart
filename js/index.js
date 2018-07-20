@@ -12,7 +12,6 @@ $(document).ready(function(){
 
     var navHeight = $('.header-top').height();
     var nav = $('.header-menu');
-    alert(navHeight);
     $(window).scroll(function () {
         if ($(this).scrollTop() > navHeight ) {
             nav.addClass("fixed");
