@@ -10,6 +10,8 @@ $(document).ready(function(){
         autoplayHoverPause:true
     });
 
+
+
     var navHeight = $('.header-top').height();
     var nav = $('.header-menu');
     $(window).scroll(function () {
@@ -36,8 +38,6 @@ $(document).ready(function(){
         $("#list").slideToggle(1000);
     });
 
-    
-
     var review = $('.review-carousel');
     review.owlCarousel({
         items:1,
@@ -47,15 +47,13 @@ $(document).ready(function(){
     var fActive = '';
 
     function filterColor(category){
-        
-
         if(fActive != category){
         $('.sort').filter('.'+category).slideDown(1000);
         $('.sort').filter(':not(.'+category+')').slideUp(1000);
         fActive = category;
         $(this).find('span').css("display", "block");
         }
-       }
+    }
         
        $('.f-elem1').click(function(){
             filterColor('elem1'); 
