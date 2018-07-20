@@ -292,6 +292,7 @@
   position: absolute;
   top: 0px;
   display: none;
+  width: 100%;
   height: calc(100% - 40px);
   background: rgba(0, 0, 0, 0.5);
   padding: 70px 26px;
@@ -530,7 +531,8 @@
   line-height: 26px;
   color: #ffffff;
   background: #4ec6ab;
-  border-radius: 5px; }
+  border-radius: 5px;
+  text-decoration: none; }
   .news a:hover {
     background: #17A689;
     text-decoration: none;
@@ -651,6 +653,7 @@ footer {
   position: absolute;
   top: 0px;
   display: none;
+  width: 100%;
   height: calc(100% - 40px);
   background: rgba(0, 0, 0, 0.5);
   padding: 70px 26px;

@@ -43,6 +43,29 @@ $(document).ready(function(){
         dotsContainer: '#carousel-custom-dots'
     });  
 
+    var fActive = '';
+
+    function filterColor(category){
+        
+
+        if(fActive != category){
+        $('.sort').filter('.'+category).slideDown(1000);
+        $('.sort').filter(':not(.'+category+')').slideUp(1000);
+        fActive = category;
+        $(this).find('span').css("display", "block");
+        }
+       }
+        
+       $('.f-elem1').click(function(){
+            filterColor('elem1'); 
+        });
+       $('.f-elem2').click(function(){ filterColor('elem2'); });
+       $('.f-elem3').click(function(){ filterColor('elem3'); });
+        
+       $('.f-all').click(function(){
+        $('.sort').slideDown(1000);
+        fActive = 'all';
+       });
    /* $('.owl-dot').click(function () {
         owl.trigger('to.owl.carousel', [$(this).index(), 300]);
       });*/
