@@ -17,20 +17,20 @@
 
 @font-face {
     font-family: 'Open Sans';
-    src: url('OpenSans-Regular.eot');
-    src: url('OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
-    url('OpenSans-Regular.woff') format('woff'),
-    url('OpenSans-Regular.ttf') format('truetype');
+    src: url('../webfonts/OpenSans-Regular.eot');
+    src: url('../webfonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../webfonts/OpenSans-Regular.woff') format('woff'),
+    url('../webfonts/OpenSans-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Roboto';
-    src: url('Roboto-Regular.eot');
-    src: url('Roboto-Regular.eot?#iefix') format('embedded-opentype'),
-    url('Roboto-Regular.woff') format('woff'),
-    url('Roboto-Regular.ttf') format('truetype');
+    src: url('../webfonts/Roboto-Regular.eot');
+    src: url('../webfonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../webfonts/Roboto-Regular.woff') format('woff'),
+    url('../webfonts/Roboto-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     }
