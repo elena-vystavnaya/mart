@@ -259,7 +259,8 @@
   margin: 15px;
   position: relative; }
   .product img {
-    width: 100%; }
+    width: 255px;
+    height: 322px; }
   .product .link {
     width: 100%;
     position: absolute;
@@ -714,7 +715,7 @@ footer {
 @font-face {
   font-family: 'Roboto';
   src: url("../webfonts/Roboto-Regular.eot");
-  src: url("../webfonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../webfonts/Roboto-Regular.woff") format("woff"), url("Roboto-Regular.ttf") format("truetype");
+  src: url("../webfonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../webfonts/Roboto-Regular.woff") format("woff"), url("../webfonts/Roboto-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 *, *:after, *:before {
