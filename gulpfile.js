@@ -1,6 +1,6 @@
 var gulp          = require('gulp'), 
     sass          = require('gulp-sass'),
-    browserSync   = require('browser-sync').create(),
+    browserSync   = require('browser-sync'),
     concat        = require('gulp-concat'),
     uglify        = require('gulp-uglifyjs'),
     cssnano       = require('gulp-cssnano'), // Подключаем пакет для минификации CSS
@@ -30,7 +30,16 @@ var cssfiles = [
     "app/libs/owl.carousel/owl.theme.default.min.css",
     "app/libs/wow/animate.css",
     "app/libs/fontawesome/all.min.css"
-  ];
+];
+
+gulp.task('browser-sync', function() { // Создаем таск browser-sync
+  browserSync({ // Выполняем browser Sync
+      server: { // Определяем параметры сервера
+          baseDir: 'app' // Директория для сервера - app
+      },
+      notify: false
+  });
+});
 
 gulp.task('sass', function(){
   return gulp.src(sassfiles)
@@ -38,7 +47,8 @@ gulp.task('sass', function(){
     .pipe(concat('style.scss'))
     .pipe(sass())
     .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true })) // Создаем префиксы
-  
+    .pipe(cssnano()) // Сжимаем
+    .pipe(rename({suffix: '.min'})) // Добавляем суффикс .min
     .pipe(gulp.dest('app/css'))
     .pipe(browserSync.stream());
 });
@@ -46,15 +56,16 @@ gulp.task('sass', function(){
 gulp.task('libs-css', function(){
     return gulp.src(cssfiles)
     .pipe(concat('libs.css'))
+    .pipe(cssnano()) // Сжимаем
+    .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('app/css'));
 });
 
-gulp.task('browser-sync', function() { // Создаем таск browser-sync
-  browserSync({ // Выполняем browser Sync
-      server: { // Определяем параметры сервера
-          baseDir: 'app' // Директория для сервера - app
-      },
-  });
+gulp.task('js', function() {
+  return gulp.src('app/js/index.js')
+    .pipe(uglify())
+    .pipe(rename({suffix: '.min'})) // Добавляем суффикс .min
+    .pipe(gulp.dest('app/js'));
 });
 
 gulp.task('libs-js', function() {
@@ -65,28 +76,16 @@ gulp.task('libs-js', function() {
     .pipe(gulp.dest('app/js'));
 });
 
-gulp.task('uglify-js', function() {
-    return gulp.src('app/js/index.js')
-      .pipe(uglify())
-      .pipe(rename({suffix: '.min'})) // Добавляем суффикс .min
-      .pipe(gulp.dest('app/js'));
-});
-
-gulp.task('uglify-css', ['sass', 'libs-css'], function() {
-  return gulp.src(['app/css/libs.css', 'app/css/style.css']) // Выбираем файл для минификации
-      .pipe(cssnano()) // Сжимаем
-      .pipe(rename({suffix: '.min'})) // Добавляем суффикс .min
-      .pipe(gulp.dest('app/css')); // Выгружаем в папку app/css
-});
-
-gulp.task('watch', ['libs-js', 'uglify-js', 'uglify-css'], function(){
+gulp.task('watch', ['browser-sync', 'sass', 'libs-css', 'js', 'libs-js'], function(){
     gulp.watch(sassfiles, [sass]);
+    gulp.watch(cssfiles, [libs-css]);
+    gulp.watch('app/js/index.js', [js]);
+    gulp.watch(jsfiles, [libs-js]); 
     gulp.watch('app/*.html', browserSync.reload()); // Наблюдение за HTML файлами в корне проекта
-    gulp.watch('app/js/**/*.js', browserSync.reload()); // Наблюдение за JS файлами в папке js
 });
 
 gulp.task('clean', function() {
-  return del.sync('dist'); // Удаляем папку dist перед сборкой
+  return del.sync(['css', 'js', 'img', 'webfonts']); // Удаляем папку dist перед сборкой
 });
 
 gulp.task('img', function() {
@@ -100,7 +99,7 @@ gulp.task('img', function() {
       .pipe(gulp.dest('img')); // Выгружаем на продакшен
 });
 
-gulp.task('build', ['clean', 'img', 'uglify-css', 'uglify-js', 'libs-js'], function() {
+gulp.task('build', ['clean', 'img', 'sass', 'libs-css', 'js', 'libs-js'], function() {
 
   var buildCss = gulp.src([ // Переносим CSS стили в продакшен
       'app/css/style.min.css',
