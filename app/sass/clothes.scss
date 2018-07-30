@@ -42,7 +42,7 @@
             width: calc(100% - 55px);
             @extend %text-clothes;
             background: #555555;
-            
+            margin: 0;
             padding-left: 15px;
         }
     }
@@ -54,7 +54,7 @@
 
         .link{
             h3{
-                font-size: 12px;    
+                font-size: 12px;  
             }
         }
     }

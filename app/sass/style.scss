@@ -1,0 +1,97 @@
+/* FONTS */
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../webfonts/OpenSans-Regular.eot');
+    src: url('../webfonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../webfonts/OpenSans-Regular.woff') format('woff'),
+    url('../webfonts/OpenSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../webfonts/Roboto-Regular.eot');
+    src: url('../webfonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../webfonts/Roboto-Regular.woff') format('woff'),
+    url('../webfonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+
+*, *:after, *:before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.clearfix:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+.containers{
+    padding: 100px 0;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.container-flex{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 15px; 
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+div{
+    box-sizing: border-box;
+}
+
+h2{
+    text-align: center;
+    font-family: 'Roboto';
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 60px;
+    color: #515151;
+    vertical-align: 20;
+}
+
+@media screen and (max-width: 767px){
+    h2 {
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .containers {
+        padding: 75px 0;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .containers {
+        padding: 50px 0;
+    }
+}
+
+@import 'header-top';
+@import 'header-menu';
+@import 'slider';
+@import 'textBlocks';
+@import 'clothes';
+@import 'products';
+@import 'end-season';
+@import 'review';
+@import 'news';
+@import 'newsletter';
+@import 'contacts';
+@import 'footer';
+@import 'block-hover';

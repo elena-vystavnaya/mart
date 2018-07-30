@@ -22,7 +22,8 @@
     }
     
     h1{
-        @extend %h1-h3;    
+        @extend %h1-h3; 
+        margin: 0;   
         span{
              color: #1abc9c;
              font-weight: 400;
@@ -46,7 +47,7 @@
         font-size: 14px;
         border: 2px #1abc9c solid; 
         text-shadow: none;
-        margin-top: 25px;
+     //   margin-top: 25px;
         padding: 10px 30px;
         text-decoration: none;
 
@@ -78,7 +79,8 @@
 
     .slider{
         .buyNow{
-            font-size: 12px;
+            font-size: 10px;
+            padding: 3px 15px;
         }
     
         h1, h3{
@@ -91,13 +93,13 @@
 
     .slider{
         .buyNow{
-            font-size: 10px;
-            padding: 5px 15px;
-            margin-top: 13px;
+            font-size: 9px;
+            padding: 2px 9px;
         }
     
         h1, h3{
-            font-size: 15px;
+            font-size: 14px;
+            margin: 0;
         }
     }
 }
@@ -106,13 +108,13 @@
 
     .slider{
         .buyNow{
-            font-size: 10px;
+            font-size: 8px;
             padding: 3px 10px;
-            margin-top: 10px;
         }
     
         h1, h3{
-            font-size: 12px;
+            font-size: 9px;
+            margin-bottom: 0.2rem;
         }
     }
 }

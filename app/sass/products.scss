@@ -7,17 +7,19 @@
     text-transform: uppercase;
 }
 
-.group-elem{
+.controls{
     display: flex;
     justify-content: center;
 }
+
 
 .button-group{
     display: flex;
     justify-content: center;
     text-align: center;
-   
-    li{  
+    margin: 0 auto;
+  
+    .filter{  
         display: inline-block; 
         @extend %text-products;     
         margin: 5px;
@@ -37,7 +39,7 @@
     span{
         display: none;
     }
-}
+} 
 
 .product{
     background: #e9f0fd;
@@ -52,6 +54,4 @@
         width: 200px;
         flex-flow: column wrap;
     }
-
-
 }
